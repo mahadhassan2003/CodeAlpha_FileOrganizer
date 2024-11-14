@@ -1,59 +1,46 @@
-```markdown
 # File Organizer Script
 
-This Python script organizes files within a specified folder by categorizing them into folders such as Documents, Images, Scripts, Audio, Videos, and Uncategorized based on their file extensions. It also provides a summary of the files organized in each category.
+This Python script organizes files within a specified folder by categorizing them based on their file extensions. Each file is moved to a subfolder, such as Documents, Images, Scripts, Audio, Videos, or Uncategorized, to keep your directory tidy and organized.
 
-## Features
+## Project Overview
 
-- **Categorizes files**: Automatically moves files into folders based on file extensions:
+When run, this script scans a given folder, determines each file’s type by its extension, and organizes it accordingly. It also generates a summary, displaying the count of files organized in each category.
+
+### Features
+
+- **Automated Categorization**: The script classifies files into predefined categories based on extensions:
   - **Documents**: `.pdf`, `.docx`, `.txt`, `.xls`, `.xlsx`
   - **Images**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`
   - **Scripts**: `.py`, `.js`, `.html`, `.css`, `.cpp`
   - **Audio**: `.mp3`, `.wav`, `.aac`
   - **Videos**: `.mp4`, `.mov`, `.avi`
-  - **Uncategorized**: Any other file extensions
-- **Summary output**: Displays a count of files organized into each category.
+  - **Uncategorized**: Any other file extensions.
+  
+- **Customizable Extensions**: You can add new file types or categories by modifying the script.
 
-## Getting Started
+- **Summary Output**: After organizing, the script provides a count of files sorted into each category.
 
-### Prerequisites
+## Project Structure
 
-- Python 3.x
+This project includes:
 
-### Usage
+- **`organize_files.py`**: The main script that categorizes and organizes files.
 
-1. Clone or download this repository.
-2. Update the `folder_path` variable with the directory you want to organize, or input it when prompted.
-3. Run the script:
+### How It Works
 
-   ```bash
-   python organize_files.py
-   ```
+1. **File Iteration**: The script scans through each file in the specified folder.
+2. **Category Detection**: Based on the file extension, the script assigns files to categories.
+3. **Folder Creation and Sorting**: For each category, a new folder is created if it doesn’t already exist, and files are moved accordingly.
+4. **Summary Report**: Outputs a summary showing the number of files moved to each category.
 
-4. Enter the full path to the folder you want to organize when prompted, or update the default path in the code (`folder_path = "D:\\File Organizer"`).
+## License
 
-### Example
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-Enter the folder path to organize: D:\MyFiles
-Summary of Files Organized:
-Documents: 5
-Images: 10
-Scripts: 2
-Audio: 3
-Videos: 1
-Uncategorized: 4
-```
+## Contributing
 
-## Customization
-
-You can update the file extensions or add new categories by editing the `ext` lists in the script.
-
-## Author
-
-*Mahad Hassan*
+Contributions are welcome! If you have suggestions for improvements, please open an issue or submit a pull request.
 
 ---
 
-This is a simple organizational tool to keep your files tidy. Contributions and suggestions are welcome!
-```
+Keep your files organized with this simple, customizable Python tool!
