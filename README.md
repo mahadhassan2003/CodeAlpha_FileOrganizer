@@ -33,9 +33,6 @@ This project includes:
 3. **Folder Creation and Sorting**: For each category, a new folder is created if it doesn’t already exist, and files are moved accordingly.
 4. **Summary Report**: Outputs a summary showing the number of files moved to each category.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
